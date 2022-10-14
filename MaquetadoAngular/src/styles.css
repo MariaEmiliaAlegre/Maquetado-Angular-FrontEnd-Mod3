@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/*COLOR BODY*/
+.body {
+    background-image: url(/assets/IMG/Fondo\ Sobre\ Mi.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+  }

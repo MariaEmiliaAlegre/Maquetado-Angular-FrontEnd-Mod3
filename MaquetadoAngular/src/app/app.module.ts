@@ -11,6 +11,8 @@ import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HardSoftSkillsComponent,
     ProyectosComponent,
     FooterComponent,
+ 
+
   ],
   imports: [
     BrowserModule,
