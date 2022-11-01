@@ -1,0 +1,48 @@
+/* SECCION ACERCADE*/
+/*PERFIL*/
+.rounded-circle {
+  max-width: 25%;
+  margin: 5%;
+  image-resolution: rouded-circle;
+}
+
+/*FULL STACK DEVELOPER JR.*/
+.col-lg-4 {
+  font-family: 'Arima Madurai', cursive;
+  color: rgb(243, 6, 6);
+  font-size: 1.5rem;
+  margin-top: -16%;
+  margin-left: 47%;
+}
+
+/*ACERCA*/
+.acercade {
+  width: 100%;
+  text-align: center;
+}
+
+/*CARD ACERCA DE*/
+.card-first {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 0%;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fcfafa;
+  box-shadow: 0px 1px 10px #020202;
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card-first:hover {
+  box-shadow: 5px 50px 20px #070707;
+  transform: translate(-3%);
+}
+
+/* Ubicacion botones edicion*/
+.btn-edit {
+  position: relative;
+  float: right;
+}
+
+/*FIN SECCION ACERCADE*/

@@ -1,0 +1,36 @@
+/* SECCION EDUCACION*/
+.educacion {
+  text-align: center;
+  text-decoration: overline;
+}  
+h4{
+  
+}
+.edu1, .edu2, .edu3, .edu4 {
+  max-width: 120px;
+  margin-top: 3rem;
+}
+.col-6 {
+  text-align: initial;
+  padding-top: 2rem;
+}
+  .certificaciones {
+    margin-top: 10rem;
+    text-align: center;
+    justify-content: flex;
+    margin-left: 10rem;
+  }
+  .mx-3 {
+    margin-top: 3rem;
+  }
+
+  /* Ubicacion botones edicion*/
+  .btn-edit1 {
+    position: relative;
+    float: right;
+    margin-right: 7%;
+    margin-top: -3rem;
+  }
+  
+  
+  /*FIN SECCION EDUCACION*/

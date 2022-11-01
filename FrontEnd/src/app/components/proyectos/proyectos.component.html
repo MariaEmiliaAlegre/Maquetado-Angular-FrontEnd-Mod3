@@ -1,0 +1,21 @@
+<!--PROYECTOS-->
+<div class="proyectos">
+  <section class="m-4 p-3">
+    <div class="d-flex justify-content-between my-2">
+      <h3>Proyectos</h3>
+    </div>
+    <div class="card-group text-center">
+      <div class="card"  *ngFor="let proyectos of proyectos">
+        <div class="btn-edit1">
+          <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+          <a href="#" class="btn"><i class="fa-solid fa-trash"></i></a>
+      </div>
+        <div class="border-primary">
+          <img [src]= "proyectos.logo" class="card-img" alt="proyectos">
+          <div class="card-body">
+            <h5 class="card-title">{{proyectos.titulo}}</h5>
+            <p class="card-text">{{proyectos.descripcion}}</p>
+            <a routerLink="http://..." target="_blank" class="btn btn-outline-warning btn-sm">¿Te lo Muestro?</a>
+          </div>
+        </div>
+      </div>

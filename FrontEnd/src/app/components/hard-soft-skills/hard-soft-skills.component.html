@@ -1,0 +1,18 @@
+<!--HARD & SOFT SKILLS-->
+<section>
+    <div class="skills">
+        <h3>Hard Skills & Soft Skills</h3>
+    </div>
+    <div class="btn-edit1">
+        <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a href="#" class="btn"><i class="fa-solid fa-trash"></i></a>
+    </div>
+    <div class="col-md-10">
+        <!-- Interacion sobre la variable de instancia y presentacion de datos mediante interpolacion-->
+        <div class="progress mb-3" *ngFor="let skill of skills">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" [ngClass]="skill.color" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.porcentaje">{{skill.porcentaje}}% {{skill.habilidad}}
+            </div>
+            </div>
+        </div>
+</section>
+

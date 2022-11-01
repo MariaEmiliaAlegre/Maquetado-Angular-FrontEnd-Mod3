@@ -1,0 +1,27 @@
+/*NABVAR-VERTICAL*/
+/*navbar foto vertical*/
+.perfil {
+    width: 75%;
+    margin-top: 10%;
+}
+
+.nav.vertical {
+    float: left;
+    margin-left: 1rem;
+    min-height: 70vh;
+}
+
+li.vertical {
+    display: block;
+    margin: 0;
+    writing-mode: vertical;
+    padding: 3rem 0;
+    transform: rotateZ(-90deg);
+    margin-left: -80rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
