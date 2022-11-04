@@ -42,10 +42,10 @@
         {
             "id": 2,
             "inicio": "Agosto de 2021",
-            "fin": "Noviembre de 2022",
+            "fin": "Diciembre de 2022",
             "titulo": "Codo a Codo Inicial",
-            "logo": "../assets/IMG/codoacodo.png",
-            "descripcion": "Lorem ipsum dolor sit amet, con"
+            "logo": "../assets/IMG/codoacodo1.jpg",
+            "descripcion": "Brinda herramientas que faciliten la inserción laboral en el sector IT, en mi caso elegi la modalidad, FullStack – Desarrollo Web (Java)."
         },
         {
             "id": 3,
@@ -53,15 +53,15 @@
             "fin": "Enero de 2022",
             "titulo": "Argentina Programa #Se Programar",
             "logo": "../assets/IMG/argprog.jpg",
-            "descripcion": "Lorem ipsum dolor sit amet, con"
+            "descripcion": "#SéProgramar es un curso introductorio en el que aprendi los fundamentos básicos de la programación para dar mis primeros pasos en el mundo tecnológico. Aprobado este, segui con el curso de la segunda etapa de Argentina Programa #YoProgramo, para continuar con mi trayecto formativo."
         },
         {
             "id": 4,
-            "inicio": "Octubre de 2021",
-            "fin": "Febrero de 2022",
-            "titulo": "Se Programar",
-            "logo": "../assets/IMG/argprog.jpg",
-            "descripcion": "Lorem ipsum dolor sit amet, con"
+            "inicio": "Marzo de 2009",
+            "fin": "Diciembre de 2012",
+            "titulo": "Tecnica Superior en RR:HH",
+            "logo": "../assets/IMG/utn.jpg",
+            "descripcion": "Como Técnica Superior RRHH estoy preparada para un desempeño profesional en el ámbito de las empresas u organizaciones con una profesionalización técnica totalmente integrada. Capaz de utilizar las herramientas existentes en la organización y hacerlas funcionar eficaz y eficientemente, como así también es, el innovador, de nuevas estrategias para lograr un mejor desempeño de la administración de la organización."
         }
     ],
 

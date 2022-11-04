@@ -16,71 +16,56 @@
 </head>
 
 <body class="body">
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
-            <img src="/assets/IMG/APLogo.png" alt="LogoAP" class="w-25">
-        </a>
-        <!--Social-->
-        <ul class="list-group list-group-horizontal">
-        <li class="list-group-item"><a href="https://github.com/MariaEmiliaAlegre" target="_blank"><i class="fa-brands fa-square-github fa-3x text-white"></i></a></li>
-        <li class="list-group-item"><a href= "https://www.linkedin.com/in/emiliaalegre/" target="_blank"><i class="fa-brands fa-linkedin fa-3x text-white"></i></a></li>
-        <li class="list-group-item">
-            <!--Boton que envia Login-->
-            <a href='/login.html'><i class="fa-solid fa-user-lock fa-3x text-white"></i></a>
-        </li>
-        </ul>
-      </div>
-  </nav>
-    <!--Fin Navbar-->
+  <app-nav-bar></app-nav-bar>
 
   <!--FORMULARIO LOGIN-->
-  <div class="login">
+  <section class="login">
     <div class="container text-center">
       <div class="row">
         <div class="col-2">
         </div>
         <div class="col-8">
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text"></div>
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+              <div>
+                <label for="email">Email: </label>
+                <input type="email" formControlName="email">
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+              <!-- Gracias al getter que configuramos en el controlador -->
+              <div *ngIf="Mail?.errors  && Mail?.touched">
+                <p *ngIf="Mail?.hasError('required')" class="error">
+                  El email es requerido.
+                </p>
+                <p *ngIf="Mail?.hasError('email')" class="error">
+                  El formato del email debe ser válido.
+                </p>
               </div>
+              <br />
+              <div>
+                <label for="exampleInputPassword1" class="form-label">Password: </label>
+                <input type="password" formControlName="password" [class.border-danger]="MailValid">
+              </div>
+              <!-- Gracias al getter que configuramos en el controlador -->
+              <div *ngIf="Password?.errors  && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="error">
+                  El password es requerido.
+                </p>
+              </div>
+              <br />
+              <div>
+                <a href="/login"><button type="submit">Registrarme</button></a>
+              </div>
+              <br>
+              <small>Si ya tenés cuenta <a routerLink="/login">Ingresá</a></small>
             </form>
           </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-secondary">Registrarme</button>
-          </div>
-          <small>Si ya tenés cuenta <a routerLink="/registro">Ingresá</a></small>
         </div>
         <div class="col-2">
           <button type="button" class="btn">
-            <a routerLink='./dashboard'><i class="fa-solid fa-rectangle-xmark"></i></a>
+            <a href="/login"><i class="fa-solid fa-rectangle-xmark"></i></a>
           </button>
         </div>
       </div>
     </div>
 
-
-  <!--FOOTER-->
-  <footer>
-    <div class="footer">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="container rounded shadow bg-body-transparent">
-          <div>
-            <p>AME © - Alegre Maria Emilia -Portfolio - 2022. Córdoba, Argentina - ARGENTINA PROGRAMA</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </footer>
-  
+    <app-modalfooter></app-modalfooter>

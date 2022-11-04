@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 
 
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -67,6 +68,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
 
    
   ],

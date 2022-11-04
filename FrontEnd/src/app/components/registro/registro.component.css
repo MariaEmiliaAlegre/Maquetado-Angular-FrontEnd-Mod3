@@ -1,66 +1,122 @@
-/*COLOR BODY*/
-body {
-    background-image: url(/assets/IMG/FondoSobreMi.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -msn-background-size: cover;
-    overflow-x: hidden;
-  }
-  
-  /*INICIO SECCION NABVAR-HEADER*/
-  .navbar.navbar-expand-lg.bg-dark {
-    height: 110px;
-    justify-content: center;
-    background: rgb(34, 193, 195);
-    background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
-  }
-  .navbar-brand {
-    justify-content:flex-start;
-    display:flex;
-  }
-  /*ICONOS*/
-  .list-group {
-    --bs-list-group-bg: transparent;
-    --bs-list-group-border-color: transparent;
-  }
-  
-.fa-brands.fa-linkedin.fa-3x.text-white:hover {
-    --bs-text-opacity: 1;
-    color: #1713ec !important;
-  }
-  
-  .fa-brands.fa-square-github.fa-3x.text-white:hover {
-    --bs-text-opacity: 1;
-    color: #5b5a99 !important;
-  }
-  
-  .fa-solid.fa-user-lock.fa-3x:hover {
-    --bs-text-opacity: 1;
-    color: #000000 !important;
-  }
-  
-  /*FIN SECCION NABVAR-HEADER*/
-.login {
-    text-align: center;
-    margin-top: 10rem;
-    height: 75vh;
+.modal-fade {
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-mail {
+  margin-top: 75px;
+  height: auto;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-key {
+  height: 100px;
+  font-size: 80px;
+  line-height: 100px;
+  background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-header {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #010101;
 }
 
 
-/*INICIO FOOTER*/
-.footer {
-    margin-top: 5rem;
-    position: fixed;
-    margin-left: 20%;
-    height: 8%;
-    text-align: center;
-    width: 60%;
+input[type=email] {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #de790d;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #070707;
 }
-  /*FIN FOOTER*/
+
+input[type=password] {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #de790d;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  outline: 0px;
+}
+
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #0DB8DE;
+  outline: 0;
+  background-color: #fdfeff;
+  color: #020202;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.form-control-label {
+  font-size: 10px;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn.btn-secondary {
+  border-color: #434e51;
+  color: #f5f8f9;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(228, 20, 20, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn.btn-secondary:hover {
+  background-color: #131211;
+  right: 0px;
+}
+
+.login-btn {
+  float: left;
+}
+
+.login-button {
+  padding-right: 0px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.login-text {
+  text-align: left;
+  padding-left: 0px;
+  color: #a4a3a2;
+}
+.container.text-center {
+  margin-top: 10rem;
+}

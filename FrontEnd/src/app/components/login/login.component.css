@@ -89,9 +89,9 @@ label {
 }
 
 .btn.btn-secondary {
-    border-color: #0DB8DE;
-    color: #0DB8DE;
-    border-radius: 0px;
+    border-color: #434e51;
+    color: #f5f8f9;
+    border-radius: 8px;
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 0 1px 3px rgba(228, 20, 20, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -117,3 +117,13 @@ label {
     padding-left: 0px;
     color: #a4a3a2;
 }
+.container.text-center {
+    margin-top: 10rem;
+}
+.error {
+    color: #bb0606;
+}
+.border-danger {
+    border-color: #bb0606;
+}
+

@@ -3,12 +3,11 @@
   text-align: center;
   text-decoration: overline;
 }  
-h4{
-  
-}
+
 .edu1, .edu2, .edu3, .edu4 {
-  max-width: 120px;
+  max-width: 90px;
   margin-top: 3rem;
+  border-radius: 15px;
 }
 .col-6 {
   text-align: initial;

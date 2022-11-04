@@ -1,4 +1,10 @@
 .footer {
   margin-left: 25%;
+  height: 15%;
   width: 60%;
+}
+.botones {
+  width: 15%;
+  text-align: center;
+  margin-left: 35%;
 }

@@ -25,3 +25,7 @@ a:hover {
     text-decoration: none;
     color: #000000;
 }
+.list-group {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+  }
