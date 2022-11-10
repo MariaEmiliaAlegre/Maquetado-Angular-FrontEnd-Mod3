@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -14,7 +14,6 @@ import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { LogoutComponent } from './components/logout/logout.component';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { IndexComponent } from './components/index/index.component';
@@ -29,7 +28,10 @@ import { ModalproyectosComponent } from './components/dashboard/modalproyectos/m
 import { ModalbannerComponent } from './components/dashboard/modalbanner/modalbanner.component';
 import { ModalfooterComponent } from './components/dashboard/modalfooter/modalfooter.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
-import { RegistroComponent } from './components/registro/registro.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
+import { interceptorProvider } from './components/model/service/interceptor-service';
+
 
 
 
@@ -44,7 +46,6 @@ import { RegistroComponent } from './components/registro/registro.component';
     ProyectosComponent,
     FooterComponent,
     ExperienciaComponent,
-    LogoutComponent,
     LoginComponent,
     ErrorComponent,
     IndexComponent,
@@ -59,7 +60,7 @@ import { RegistroComponent } from './components/registro/registro.component';
     ModalbannerComponent,
     ModalfooterComponent,
     DashboardComponent,
-    RegistroComponent,
+    LogoAPComponent
    
  
 
@@ -69,11 +70,15 @@ import { RegistroComponent } from './components/registro/registro.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({
+    }),
 
    
   ],
   
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

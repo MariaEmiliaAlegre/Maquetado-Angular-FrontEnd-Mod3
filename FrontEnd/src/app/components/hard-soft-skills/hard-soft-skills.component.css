@@ -1,20 +1,5 @@
-/*HARD & SOFT SKILLS*/
-.skills {
-    margin-left: 7%;
+.row {
+    padding: 20px;
     text-align: center;
-    text-decoration: overline;
+    text-decoration: overline red;
 }
-.progress.mb-3 {
-    margin-left: 20%;
-    margin-top: 3%;
-    height: 25px;
-}
-
-.btn-edit1 {
-        position: relative;
-        float: right;
-        margin-right: 10%;
-        margin-top: -3%;
-}
-
-/*FIN HARD & SOFT SKILLS*/

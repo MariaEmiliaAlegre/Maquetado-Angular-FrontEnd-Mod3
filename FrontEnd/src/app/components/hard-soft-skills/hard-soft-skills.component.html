@@ -1,18 +1,120 @@
 <!--HARD & SOFT SKILLS-->
-<section>
-    <div class="skills">
-        <h3>Hard Skills & Soft Skills</h3>
-    </div>
-    <div class="btn-edit1">
-        <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
-        <a href="#" class="btn"><i class="fa-solid fa-trash"></i></a>
-    </div>
-    <div class="col-md-10">
-        <!-- Interacion sobre la variable de instancia y presentacion de datos mediante interpolacion-->
-        <div class="progress mb-3" *ngFor="let skill of skills">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" [ngClass]="skill.color" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.porcentaje">{{skill.porcentaje}}% {{skill.habilidad}}
-            </div>
-            </div>
-        </div>
-</section>
+<div class="row">
+  <h2>Hard & Soft Skills</h2>
+<div class="col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+  [percent]="85"
+  [radius]="100"
+  [imageSrc]= "'../assets/IMG/html.png'"
+  [showImage]="true"
+  [imageHeight]="70"
+  [imageWidth]="70"
+  [title]="'HTML'"
+  [titleColor]="'red'"
+  [titleFontSize]="'3em'"
+  [outerStrokeWidth]="16"
+  [innerStrokeWidth]="8"
+  [outerStrokeColor]="'#78C000'"
+  [innerStrokeColor]="'#C7E596'"
+  [animation]="true"
+  [animationDuration]="600"
+  ></circle-progress>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+[percent]="85"
+[radius]="100"
+[imageSrc]= "'../assets/IMG/css.png'"
+[showImage]="true"
+[imageHeight]="70"
+[imageWidth]="70"
+[title]="'HTML'"
+[titleColor]="'red'"
+[titleFontSize]="'3em'"
+[outerStrokeWidth]="16"
+[innerStrokeWidth]="8"
+[outerStrokeColor]="'#78C000'"
+[innerStrokeColor]="'#C7E596'"
+[animation]="true"
+[animationDuration]="600"
+></circle-progress>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+[percent]="85"
+[radius]="100"
+[imageSrc]= "'../assets/IMG/git.png'"
+[showImage]="true"
+[imageHeight]="70"
+[imageWidth]="70"
+[title]="'HTML'"
+[titleColor]="'red'"
+[titleFontSize]="'3em'"
+[outerStrokeWidth]="16"
+[innerStrokeWidth]="8"
+[outerStrokeColor]="'#78C000'"
+[innerStrokeColor]="'#C7E596'"
+[animation]="true"
+[animationDuration]="600"
+></circle-progress>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+[percent]="85"
+[radius]="100"
+[imageSrc]= "'../assets/IMG/angular.png'"
+[showImage]="true"
+[imageHeight]="70"
+[imageWidth]="70"
+[title]="'HTML'"
+[titleColor]="'red'"
+[titleFontSize]="'3em'"
+[outerStrokeWidth]="16"
+[innerStrokeWidth]="8"
+[outerStrokeColor]="'#78C000'"
+[innerStrokeColor]="'#C7E596'"
+[animation]="true"
+[animationDuration]="600"
+></circle-progress>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+[percent]="85"
+[radius]="100"
+[imageSrc]= "'../assets/IMG/bootstrap.png'"
+[showImage]="true"
+[imageHeight]="70"
+[imageWidth]="70"
+[title]="'HTML'"
+[titleColor]="'red'"
+[titleFontSize]="'3em'"
+[outerStrokeWidth]="16"
+[innerStrokeWidth]="8"
+[outerStrokeColor]="'#78C000'"
+[innerStrokeColor]="'#C7E596'"
+[animation]="true"
+[animationDuration]="600"
+></circle-progress>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+[percent]="85"
+[radius]="100"
+[imageSrc]= "'../assets/IMG/group.png'"
+[showImage]="true"
+[imageHeight]="70"
+[imageWidth]="70"
+[title]="'HTML'"
+[titleColor]="'red'"
+[titleFontSize]="'3em'"
+[outerStrokeWidth]="16"
+[innerStrokeWidth]="8"
+[outerStrokeColor]="'#78C520'"
+[innerStrokeColor]="'#C7E596'"
+[animation]="true"
+[animationDuration]="600"
+></circle-progress>
+</div>
+</div>
+
 

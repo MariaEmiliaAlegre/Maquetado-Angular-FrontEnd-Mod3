@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+
 
 @Component({
   selector: 'app-hard-soft-skills',
@@ -8,17 +8,9 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class HardSoftSkillsComponent implements OnInit {
   
- skills: any;
-  
 
+  constructor() { }     //pasado base skills, constructor//
 
-  constructor(
-    private PortfolioService:PortfolioService) { }     //pasado base skills, constructor//
+  ngOnInit(): void {}
+    }
 
-  ngOnInit(): void {
-    this.PortfolioService.getDatos().subscribe(portfolio =>{
-      
-      this.skills=portfolio.skills;
-      }
-    )}
-}

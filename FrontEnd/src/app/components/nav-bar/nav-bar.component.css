@@ -25,9 +25,4 @@
   color: #5b5a99 !important;
 }
 
-.fa-solid.fa-user-lock.fa-3x:hover {
-  --bs-text-opacity: 1;
-  color: #000000 !important;
-}
-
 /*FIN SECCION NABVAR-HEADER*/

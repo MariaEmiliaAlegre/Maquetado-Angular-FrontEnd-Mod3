@@ -1,48 +1,60 @@
-/* SECCION ACERCADE*/
-/*PERFIL*/
-.rounded-circle {
-  max-width: 25%;
-  margin: 5%;
-  image-resolution: rouded-circle;
+
+.row {
+  padding: 20px;
 }
 
-/*FULL STACK DEVELOPER JR.*/
-.col-lg-4 {
-  font-family: 'Arima Madurai', cursive;
-  color: rgb(243, 6, 6);
-  font-size: 1.5rem;
-  margin-top: -20%;
-  margin-left: 47%;
-}
-
-/*ACERCA*/
-.acercade {
-  width: 100%;
+span {
   text-align: center;
 }
 
-/*CARD ACERCA DE*/
-.card-first {
-  width: 80%;
+#nombre {
+  font-weight: bold;
+  margin-top: 30%;
+  text-align: center;
+  margin-left: 18%;
+}
+
+#titulo {
+  text-align: center;
   margin-left: 10%;
+  margin-top: 20%;
+}
+#fotodeperfil {
+  margin-top: -15%;
   text-align: center;
-  margin-top: 0%;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fcfafa;
-  box-shadow: 0px 1px 10px #020202;
-  cursor: default;
-  transition: all 400ms ease;
-}
-.card-first:hover {
-  box-shadow: 5px 50px 20px #070707;
-  transform: translate(-3%);
 }
 
-/* Ubicacion botones edicion*/
-.btn-edit {
-  position: relative;
-  float: right;
+/*Foto de Perfil*/
+@media (min-width: 576px) {
+  #fotodeperfil {
+    position: absolute;
+    width: 17%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 5%;
+    top: 580px;
+  }
 }
-
-/*FIN SECCION ACERCADE*/
+@media (max-width: 575px) {
+  #fotodeperfil {
+    position: absolute;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 35%;
+    top: 520px;
+  }
+  #nombre {
+    margin-top: 35%;
+    text-align: center;
+    margin-left: 7%;
+  }
+  #titulo {
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 7%;
+  }
+  span {
+    text-align: center;
+  }
+}

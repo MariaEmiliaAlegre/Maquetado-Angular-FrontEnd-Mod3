@@ -1,21 +1,6 @@
-/*EXPERIENCIA*/
-  h3{
-    text-decoration: overline;
-    text-align: center;
-    margin-top: 5rem;
-  }
-  .exp1, .exp2, .exp3 {
-    max-width: 90px;
-    text-align: center;
-    border-radius: 1rem;
-    margin-left: 5rem;
-
-  }
-
-/* Ubicacion botones edicion*/
-.btn-edit {
-    position: relative;
-    float: right;
-    margin-right: 10%;
+.row{
+  padding: 20px;
 }
-  /*FIN SECCION EXPERIRNCIA*/
+h1, h3{
+  display: inline;
+}

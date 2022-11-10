@@ -1,35 +1,10 @@
-/* SECCION EDUCACION*/
-.educacion {
+.row {
+  padding: 20px;
+}
+h1, h3 {
+  display: inline;
+}
+h2 {
   text-align: center;
-  text-decoration: overline;
-}  
-
-.edu1, .edu2, .edu3, .edu4 {
-  max-width: 90px;
-  margin-top: 3rem;
-  border-radius: 15px;
+  text-decoration: overline red;
 }
-.col-6 {
-  text-align: initial;
-  padding-top: 2rem;
-}
-  .certificaciones {
-    margin-top: 10rem;
-    text-align: center;
-    justify-content: flex;
-    margin-left: 10rem;
-  }
-  .mx-3 {
-    margin-top: 3rem;
-  }
-
-  /* Ubicacion botones edicion*/
-  .btn-edit1 {
-    position: relative;
-    float: right;
-    margin-right: 7%;
-    margin-top: -3rem;
-  }
-  
-  
-  /*FIN SECCION EDUCACION*/
