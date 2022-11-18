@@ -8,7 +8,8 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://ameback.herokuapp.com/educacion/';
+  /*URL = 'https://ameback.herokuapp.com/educacion/';*/
+  URL = "https://localhost:4200/educacion/";
 
   constructor(private httpClient : HttpClient) { }
 

@@ -9,7 +9,9 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export default class AuthService {
-  authURL = 'https://ameback.herokuapp.com/auth/';
+  authURL = "https://localhost:4200/auth/"; 
+  /*'https://ameback.herokuapp.com/auth/'*/
+  
 
   constructor(private httpClient: HttpClient) { }
 

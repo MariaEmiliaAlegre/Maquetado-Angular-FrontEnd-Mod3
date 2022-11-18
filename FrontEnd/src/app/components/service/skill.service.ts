@@ -7,7 +7,8 @@ import { Skill } from "../model/skill";
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://ameback.herokuapp.com/skill/';
+  /*URL = 'https://ameback.herokuapp.com/skill/';*/
+  URL = "https://localhost:4200/skill/";
   
   constructor(private httpClient: HttpClient) { }
 

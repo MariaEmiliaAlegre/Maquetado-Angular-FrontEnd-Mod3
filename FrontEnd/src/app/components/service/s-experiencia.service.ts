@@ -8,7 +8,8 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  URL = 'https://ameback.herokuapp.com/explab/';
+  /*URL = 'https://ameback.herokuapp.com/explab/';*/
+  URL = "https://localhost:4200/explab/";
 
   constructor(private httpClient: HttpClient) { }
 

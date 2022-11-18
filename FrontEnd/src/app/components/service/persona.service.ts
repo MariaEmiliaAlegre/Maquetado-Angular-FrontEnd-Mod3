@@ -9,7 +9,8 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   
-  URL = 'https://ameback.herokuapp.com/personas/';
+  /*URL = 'https://ameback.herokuapp.com/personas/';*/
+  URL = "https://localhost:4200/personas/";
 
   constructor(private httpClient: HttpClient) { }
 
