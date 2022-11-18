@@ -1,32 +1,33 @@
 <div class="row">
-    <h2>Educación</h2>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-      
-      <!--Entrada-->
-      <ul>
-        <li>
-          <img src="../" class="img-fluid" id="edu1">
-          <h1 id="Educación 1"></h1>
-          <h3>Nombre Empresa</h3>
-          <h5>(duracion)</h5>
-          <p id="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum consequatur odio fuga reiciendis, maiores aut perferendis iure? Quae exercitationem illum ipsum voluptatibus odio similique, suscipit atque nesciunt dicta tempora.</p>
-        </li>
-        <li>
-          <img src="../" class="img-fluid" id="edu2">
-          <h1 id="Educación 2"></h1>
-          <h3>Nombre Empresa</h3>
-          <h5>(duracion)</h5>
-          <p id="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum consequatur odio fuga reiciendis, maiores aut perferendis iure? Quae exercitationem illum ipsum voluptatibus odio similique, suscipit atque nesciunt dicta tempora.</p>
-        </li>
-        <li>
-          <img src="../" class="img-fluid" id="edu3">
-          <h1 id="Educación 3"></h1>
-          <h3>Nombre Empresa</h3>
-          <h5>(duracion)</h5>
-          <p id="Descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum consequatur odio fuga reiciendis, maiores aut perferendis iure? Quae exercitationem illum ipsum voluptatibus odio similique, suscipit atque nesciunt dicta tempora.</p>
-        </li>
-      </ul>
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educación
+        </button>
+        <br><br><br>
     </div>
-  </div>
-  
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>
+                        <h5>{{Educacion.descripcionE}}</h5>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -4,6 +4,7 @@ package com.portfolio.AME.Security.Controller;
 public class Mensaje {
     private String mensaje;
     
+    
     //Constructor
 
     public Mensaje() {
@@ -12,7 +13,6 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
     //Getter y Setter
 
     public String getMensaje() {
@@ -21,5 +21,6 @@ public class Mensaje {
 
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
-    }   
+    }
+    
 }

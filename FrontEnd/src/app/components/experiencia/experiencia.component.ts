@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from '../model/experiencia';
-import { SExperienciaService } from '../model/service/s-experiencia.service';
-import { TokenService } from '../model/service/token.service';
+import { SExperienciaService } from '../service/s-experiencia.service';
+import { TokenService } from '../service/token.service';
 
 
 @Component({
@@ -29,8 +29,8 @@ export class ExperienciaComponent implements OnInit {
     this.sExperiencia.lista().subscribe(data => { this.expe = data; })
   }
 
-  delete(id?: number){
-    if(id != undefined){
+  delete(id?: number) {
+    if (id != undefined) {
       this.sExperiencia.delete(id).subscribe(
         data => {
           this.cargarExperiencia();

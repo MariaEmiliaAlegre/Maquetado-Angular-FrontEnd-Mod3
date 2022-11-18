@@ -1,10 +1,11 @@
-.footer {
-  margin-left: 25%;
-  height: 15%;
-  width: 60%;
-}
+
 .botones {
   width: 15%;
   text-align: center;
-  margin-left: 35%;
+  margin-left: 45%;
+  margin-top: 2%;
+}
+p {
+ text-align: center;
+ margin: 2%; 
 }

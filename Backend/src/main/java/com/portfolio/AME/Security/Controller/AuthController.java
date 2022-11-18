@@ -32,7 +32,7 @@ import com.portfolio.AME.Security.jwt.JwtProvider;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
+@CrossOrigin(origins = "https://amefront-24c1d.web.app")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;

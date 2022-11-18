@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TokenService } from '../model/service/token.service';
+import { TokenService } from '../service/token.service';
 
 @Component({
   selector: 'app-logo-ap',

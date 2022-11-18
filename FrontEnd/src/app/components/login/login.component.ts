@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { LoginUsuario } from "../model/login-usuario";
-import { AuthService } from "../model/service/auth.service";
-import { TokenService } from "../model/service/token.service";
+import AuthService from "../service/auth.service";
+import { TokenService } from "../service/token.service";
 
 
 @Component({

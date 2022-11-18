@@ -1,8 +1,11 @@
 
 package com.portfolio.AME.Controller;
 
+import com.portfolio.AME.Dto.dtoExperiencia;
+import com.portfolio.AME.Entity.Experiencia;
+import com.portfolio.AME.Security.Controller.Mensaje;
+import com.portfolio.AME.Service.SExperiencia;
 import java.util.List;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,14 +20,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.portfolio.AME.Dto.dtoExperiencia;
-import com.portfolio.AME.Entity.Experiencia;
-import com.portfolio.AME.Security.Controller.Mensaje;
-import com.portfolio.AME.Service.SExperiencia;
+
 
 @RestController
+@CrossOrigin(origins = "https://amefront-24c1d.web.app")
 @RequestMapping("/explab")
-@CrossOrigin(origins = "http://localhost:4200/")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
@@ -57,9 +57,9 @@ public class CExperiencia {
     public ResponseEntity<?> create(@RequestBody dtoExperiencia dtoexp){      
         if(StringUtils.isBlank(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        if(sExperiencia.existsByNombreE(dtoexp.getNombreE()))
-            return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
-        
+        if(sExperiencia.existsByNombreE(dtoexp.getNombreE())){
+            return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
+        }
         Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE());
         sExperiencia.save(experiencia);
         

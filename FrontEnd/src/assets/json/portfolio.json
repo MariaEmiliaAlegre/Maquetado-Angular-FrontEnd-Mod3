@@ -2,7 +2,7 @@
     "nombre": "Maria Emilia",
     "apellido": "Alegre",
     "titulo": "Full Stack Developer Jr.",
-    "acerca": "Soy de la Provincia de Santa Fe. Actualmente, resido en la Provincia de Cordoba. Soy Experta en Gestion de Relaciones Laborales, con experiencia en el sector administrativo. Me considero una persona Autodidacta, la principal virtud que me llevo a adentrarme en la Programacion. Estoy predispuesta a nuevos conocimientos y anhelo poder alcanzar los conocimientos necesarios para dedicarme a la Programacion FullStack.",
+    "acerca": "Soy de la Provincia de Santa Fe. Actualmente, resido en la Provincia de Córdoba. Soy Experta en Gestion de Relaciones Laborales, con experiencia en el sector administrativo. Me considero una persona Autodidacta, la principal virtud que me llevo a adentrarme en la Programacion. Estoy predispuesta a nuevos conocimientos y anhelo poder alcanzar los conocimientos necesarios para dedicarme a la Programacion FullStack.",
     "imgPerfil": "../assets/IMG/perfil.jpeg",
 
     "experiencias": [
@@ -11,7 +11,7 @@
             "empresa": "LA COCINA DE MAMA",
             "logo": "../assets/IMG/lacocinademama.jpg",
             "puesto": "Atte. Cliente. Negocio de Elaboracion y Venta de Comidas",
-            "descripcion": "Duracion, cuatro Anios. Me encargaba de la Atencion al cliente, telefonica y de mostrador. Lista y Compras diarias. Pago a Proveedores y empleados. Caja, apertura y cierre. Rendicion de Gastos. Metodo de Facturacion, servicio de Afip. Entre otras labores. Sistema de venta (StockBase) Carga de datos, menu, precios, aumentos, se manejaba todo con sistema de impresion por comandera, cierres mensuales y anuales."
+            "descripcion": "Duración, cuatro Años. Me encargaba de la Atención al cliente, telefónica y de mostrador. Lista y Compras diarias. Pago a Proveedores y empleados. Caja, apertura y cierre. Rendición de Gastos. Método de Facturación, servicio de Afip. Entre otras labores. Sistema de venta (StockBase) Carga de datos, menú, precios, aumentos, se manejaba todo con sistema de impresión por comandera, cierres mensuales y anuales."
         },
         {
             "id":2,
@@ -112,7 +112,7 @@
         },
         {
             "id": 7,
-            "habilidad": "HTML",
+            "habilidad": "Comunicacion Grupal",
             "porcentaje": "50",
             "color": "bg-primary"
         }

@@ -8,29 +8,25 @@ import { FormsModule } from '@angular/forms';
 
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AcercadeComponent } from './components/acercade/acercade.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { IndexComponent } from './components/index/index.component';
-import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
-import { NavverticalComponent } from './components/dashboard/navvertical/navvertical.component';
-import { ModalredesComponent } from './components/dashboard/modalredes/modalredes.component';
-import { ModalacecadeComponent } from './components/dashboard/modalacecade/modalacecade.component';
-import { ModalexperienciaComponent } from './components/dashboard/modalexperiencia/modalexperiencia.component';
-import { ModaleducacionComponent } from './components/dashboard/modaleducacion/modaleducacion.component';
-import { ModalskillsComponent } from './components/dashboard/modalskills/modalskills.component';
-import { ModalproyectosComponent } from './components/dashboard/modalproyectos/modalproyectos.component';
-import { ModalbannerComponent } from './components/dashboard/modalbanner/modalbanner.component';
-import { ModalfooterComponent } from './components/dashboard/modalfooter/modalfooter.component';
-import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { interceptorProvider } from './components/model/service/interceptor-service';
+import { interceptorProvider } from './components/service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
+import { HysComponent } from './components/hys/hys.component';
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
 
 
@@ -40,29 +36,24 @@ import { interceptorProvider } from './components/model/service/interceptor-serv
     AppComponent,
     NavBarComponent,
     BannerComponent,
-    AcercadeComponent,
     EducacionComponent,
-    HardSoftSkillsComponent,
     ProyectosComponent,
     FooterComponent,
     ExperienciaComponent,
     LoginComponent,
     ErrorComponent,
     IndexComponent,
-    NavbarComponent,
-    NavverticalComponent,
-    ModalredesComponent,
-    ModalacecadeComponent,
-    ModalexperienciaComponent,
-    ModaleducacionComponent,
-    ModalskillsComponent,
-    ModalproyectosComponent,
-    ModalbannerComponent,
-    ModalfooterComponent,
-    DashboardComponent,
-    LogoAPComponent
-   
- 
+    LogoAPComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    HysComponent,
+    AcercaDeComponent,
+    EditAcercaDeComponent
+
 
   ],
   imports: [
