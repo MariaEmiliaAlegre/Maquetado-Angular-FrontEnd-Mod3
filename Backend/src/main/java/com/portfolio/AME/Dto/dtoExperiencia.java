@@ -3,25 +3,22 @@ package com.portfolio.AME.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- *
- * @author Alema
- */
-
-public class dtoEducacion {
+public class dtoExperiencia {
     @NotBlank
     private String nombreE;
     @NotBlank
     private String descripcionE;
 
-    public dtoEducacion() {
+    // Constructores
+
+    public dtoExperiencia() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoExperiencia(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
-
     }
+    // Getters & Setters
 
     public String getNombreE() {
         return nombreE;

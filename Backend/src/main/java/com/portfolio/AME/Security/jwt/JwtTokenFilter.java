@@ -15,7 +15,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-   //Valida el Token cada vez queremos hacer algo.
+//Valida el Token cada vez queremos hacer algo.
 public class JwtTokenFilter extends OncePerRequestFilter {
 
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
@@ -26,7 +26,8 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     UserDetailsImpl userDetailsServiceImpl;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
         try {
             String token = getToken(request);
             if (token != null && jwtProvider.validateToken(token)) {
@@ -41,10 +42,10 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         }
         filterChain.doFilter(request, response);
     }
-    
-    private String getToken(HttpServletRequest request){
+
+    private String getToken(HttpServletRequest request) {
         String header = request.getHeader("Authorization");
-        if(header != null && header.startsWith("Bearer"))
+        if (header != null && header.startsWith("Bearer"))
             return header.replace("Bearer", "");
         return null;
     }

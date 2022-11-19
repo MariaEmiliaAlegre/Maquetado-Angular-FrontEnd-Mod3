@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
-
 @Entity
 public class Rol {
     @Id
@@ -19,16 +18,16 @@ public class Rol {
     @NotNull
     @Enumerated(EnumType.STRING)
     private RolNombre rolNombre;
-    
-    //Constructor
+
+    // Constructor
     public Rol() {
     }
 
     public Rol(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    
-    //Getter y Setter
+
+    // Getter y Setter
 
     public int getId() {
         return id;
@@ -45,6 +44,5 @@ public class Rol {
     public void setRolNombre(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    
-    
+
 }

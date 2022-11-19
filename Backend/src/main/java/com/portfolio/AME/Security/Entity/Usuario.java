@@ -1,6 +1,7 @@
 
 package com.portfolio.AME.Security.Entity;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;
@@ -15,7 +16,7 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Usuario {
+public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -29,10 +30,10 @@ public class Usuario {
     @NotNull
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
+    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
     private Set<Rol> roles = new HashSet<>();
-    
-    //Constructores
+
+    // Constructores
 
     public Usuario() {
     }
@@ -43,8 +44,8 @@ public class Usuario {
         this.email = email;
         this.password = password;
     }
-    
-    //Getter Y Setter
+
+    // Getter Y Setter
 
     public int getId() {
         return id;
@@ -93,5 +94,5 @@ public class Usuario {
     public void setRoles(Set<Rol> roles) {
         this.roles = roles;
     }
-    
+
 }
