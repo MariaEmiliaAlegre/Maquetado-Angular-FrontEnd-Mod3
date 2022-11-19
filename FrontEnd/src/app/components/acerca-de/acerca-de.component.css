@@ -24,20 +24,20 @@ div{
         width: 25%;
     }
 }
-
-/*etiqueta nombre
-#nombre{
-    font-weight: bold;
-    /*margin-top: 30%;
-}*/
-/*.img-fluid {
-    margin-top: -10%;
+.img-fluid {
+    margin-top: 3%;
     width: 15%;
-}*/
-h2 {
+    margin-left: 15%;
+}
+h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     color: red;
-    margin-left: 5px;
-    text-align: center;
+}
+.card {
+    margin-left: 8%;
+}
+.btn.btn-success {
+    margin-left: 3%;
+    margin-left: 80%;
 }

@@ -1,8 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { LoginUsuario } from "../model/login-usuario";
-import AuthService from "../service/auth.service";
-import { TokenService } from "../service/token.service";
+import { LoginUsuario } from "../../model/login-usuario";
+import AuthService from "../../service/auth.service";
+import { TokenService } from "../../service/token.service";
+
 
 
 @Component({
@@ -44,9 +45,7 @@ export class LoginComponent implements OnInit {
         this.isLogged = false;
         this.isLogginFail = true;
         this.errMsj = err.error.mensaje;
-        console.log(this.errMsj);
-        
+        console.log(this.errMsj);  
       })
   }
-
 }

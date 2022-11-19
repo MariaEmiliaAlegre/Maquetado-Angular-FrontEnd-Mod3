@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Experiencia } from '../model/experiencia';
-import { SExperienciaService } from '../service/s-experiencia.service';
+import { Experiencia } from '../../model/experiencia';
+import { SExperienciaService } from '../../service/s-experiencia.service';
 
 @Component({
   selector: 'app-edit-experiencia',

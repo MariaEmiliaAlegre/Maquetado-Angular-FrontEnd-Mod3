@@ -17,7 +17,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { IndexComponent } from './components/index/index.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { interceptorProvider } from './components/service/interceptor-service';
+import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';

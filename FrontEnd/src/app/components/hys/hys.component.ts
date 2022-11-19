@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillService } from '../service/skill.service';
-import { TokenService } from '../service/token.service';
-import { Skill } from '../model/skill';
+import { SkillService } from '../../service/skill.service';
+import { TokenService } from '../../service/token.service';
+import { Skill } from '../../model/skill';
 
 @Component({
   selector: 'app-hys',

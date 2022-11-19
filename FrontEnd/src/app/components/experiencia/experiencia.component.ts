@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Experiencia } from '../model/experiencia';
-import { SExperienciaService } from '../service/s-experiencia.service';
-import { TokenService } from '../service/token.service';
+import { Experiencia } from '../../model/experiencia';
+import { SExperienciaService } from '../../service/s-experiencia.service';
+import { TokenService } from '../../service/token.service';
 
 
 @Component({

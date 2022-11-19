@@ -1,20 +1,23 @@
 <div class="row">
-    <h1>Acerca De</h1>
-        <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
-            Editar Persona
-        </button>
-        
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
+    <td >
+        <button class="btn btn-success" routerLink="/editacercade/1" *ngIf="isLogged">
+            <i class="fa-solid fa-pen-to-square"></i></button>
+    </td>
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src= {{persona?.img}} class="img-fluid" id="fotodeperfil">
+    <div>
+        <img src= {{persona.img}} class="img-fluid" id="fotodeperfil">
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona?.nombre}} {{persona?.apellido}}</p>
+    <br>
+    <div>
+        <h1>{{persona.nombre}} {{persona.apellido}}</h1>
         <h2>Full Stack Developer Jr</h2>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <span>
+    <br><br><br>
+    <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-10">
+        <div class="acerca">
             <h1>Acerca de mí</h1>
-            <p>{{persona?.descripcion}}</p>
-        </span>
+            <p>{{persona.descripcion}}</p>
+        </div>
     </div>
+

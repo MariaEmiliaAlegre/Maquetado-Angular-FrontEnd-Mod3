@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SkillService } from '../service/skill.service';
-import { Skill } from '../model/skill';
+import { SkillService } from '../../service/skill.service';
+import { Skill } from '../../model/skill';
 
 @Component({
   selector: 'app-edit-skill',

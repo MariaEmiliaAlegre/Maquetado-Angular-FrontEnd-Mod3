@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { persona } from 'src/app/components/model/persona.model';
-import { PersonaService } from 'src/app/components/service/persona.service';
-import { TokenService } from 'src/app/components/service/token.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -11,8 +11,8 @@ import { TokenService } from 'src/app/components/service/token.service';
 export class AcercaDeComponent implements OnInit {
   persona: persona = null;
   
-  constructor(public personaService: PersonaService, private tokenService: TokenService) { }
-
+  constructor(public personaService: PersonaService, 
+              private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class AcercaDeComponent implements OnInit {
   }
 
   cargarPersona(){
-    this.personaService.detail(1).subscribe( data =>
+    this.personaService.detail(1).subscribe(data =>
       {this.persona = data}
     )
 }
