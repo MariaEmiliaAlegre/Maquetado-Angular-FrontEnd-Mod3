@@ -1,4 +1,5 @@
 <div class="container" *ngIf="skill">
+    <h1>HARD & SOFT SKILLS</h1>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -12,6 +13,7 @@
                     <input type="text" class="form-control" id="porcentaje" name="porcentaje"
                         [(ngModel)]="skill.porcentaje" required>
                 </div>
+                <br>
                 <button class="btn btn-primary">
                     Editar Habilidad
                 </button>
